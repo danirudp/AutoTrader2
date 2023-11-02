@@ -1,0 +1,104 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+
+header {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+header nav a:hover {
+  color: #ccc;
+}
+
+main {
+  margin-top: 20px;
+}
+
+section {
+  padding: 20px 0;
+}
+
+section h2 {
+  font-size: 18px;
+  margin: 0;
+}
+
+section p {
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.vehicle-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.vehicle {
+  width: 25%;
+  margin-bottom: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.vehicle img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.vehicle h3 {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.vehicle p {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+footer p {
+  font-size: 14px;
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .vehicle-grid {
+    flex-direction: column;
+  }
+
+  .vehicle {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
